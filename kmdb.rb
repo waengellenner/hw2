@@ -253,7 +253,11 @@ puts "======"
 puts ""
 
 # Query the movies data and loop through the results to display the movies output.
-# TODO!
+my_movies = Movie.all
+for film in my_movies
+    my_studio = Studio.find_by({"id"=>film["studio_id"]})
+    puts "#{film["title"]} #{film["year_released"]} #{film["rated"]} #{my_studio["name"]}"
+end
 
 # Prints a header for the cast output
 puts ""

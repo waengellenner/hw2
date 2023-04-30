@@ -159,7 +159,48 @@ new_role["actor_id"] = Actor.find_by({"name"=>"Gary Oldman"})["id"]
 new_role["character_name"] = "Commissioner Gordon"
 new_role.save
 
+############################### The Dark Knight Actor/Roles ###################################
+new_actor = Actor.new
+new_actor["name"] = "Heath Ledger"
+new_actor.save
 
+new_actor = Actor.new
+new_actor["name"] = "Aaron Eckhart"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Maggie Gyllenhaal"
+new_actor.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Christian Bale"})["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Heath Ledger"})["id"]
+new_role["character_name"] = "Joker"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Aaron Eckhart"})["id"]
+new_role["character_name"] = "Harvey Dent"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Michael Caine"})["id"]
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Katie Holmes"})["id"]
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
 
 
 

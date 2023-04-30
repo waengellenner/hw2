@@ -203,7 +203,49 @@ new_role["character_name"] = "Rachel Dawes"
 new_role.save
 
 
+############################### The Dark Knight Rises Actor/Roles ###################################
 
+new_actor = Actor.new
+new_actor["name"] = "Tom Hardy"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Joseph Gordon-Levitt"
+new_actor.save
+
+new_actor = Actor.new
+new_actor["name"] = "Anne Hathaway"
+new_actor.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight Rises"})["id"]
+new_role["actor_id"] = Actor.find_by(name: "Christian Bale")["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight Rises"})["id"]
+new_role["actor_id"] = Actor.find_by(name: "Gary Oldman")["id"]
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight Rises"})["id"]
+new_role["actor_id"] = Actor.find_by(name: "Tom Hardy")["id"]
+new_role["character_name"] = "Bane"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight Rises"})["id"]
+new_role["actor_id"] = Actor.find_by(name: "Joseph Gordon-Levitt")["id"]
+new_role["character_name"] = "John Blake"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight Rises"})["id"]
+new_role["actor_id"] = Actor.find_by(name: "Anne Hathaway")["id"]
+new_role["character_name"] = "Selina Kyle"
+new_role.save
 
 # Prints a header for the movies output
 puts "Movies"

@@ -198,7 +198,7 @@ new_role.save
 
 new_role = Role.new
 new_role["movie_id"] = Movie.find_by({"title"=>"The Dark Knight"})["id"]
-new_role["actor_id"] = Actor.find_by({"name"=>"Katie Holmes"})["id"]
+new_role["actor_id"] = Actor.find_by({"name"=>"Maggie Gyllenhaal"})["id"]
 new_role["character_name"] = "Rachel Dawes"
 new_role.save
 
